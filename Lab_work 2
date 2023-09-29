@@ -1,0 +1,44 @@
+Задание 1
+a = int(input('Введите первое число: '))
+b = int(input('Введите второе число: '))
+z1 = str(a + b)
+z2 = str(a - b)
+z3 = str(a * b)
+z4 = str((a + b) /2)
+print ('Сумма: ' + z1)
+print ('Разность: ' + z2)
+print ('Произведение: ' + z3)
+print ('Среднее арифметическое: ' + z4)
+if a >= 0:
+    new_a = a
+else:
+    new_a = -a
+if b >= 0:
+    new_b = b
+else:
+    new_b = -b
+if new_a < new_b:
+    z5 = str(new_b - new_a)
+else:
+    z5 = str(new_a - new_b)
+
+print ('Разность максимального и минимального по модулю: ' + z5)
+
+
+
+
+
+
+Задание 2
+print ("Впишите имя: ")
+name = input()
+print ("Впишите возраст: ")
+age = int(input())
+print ("Впишите место проживания: ")
+place_of_living = input()
+print ("Впишите страну проживания: ")
+country_of_living = input()
+year_of_burning = 2023 - age
+print ('"Уважаемый '+ name +'!')
+print ('На сегодняшний день Вы проживаете в стране ' + country_of_living +', в городе')
+print (place_of_living +', и вы родились в ' + str(year_of_burning) +'".')
